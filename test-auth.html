@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Authentification</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>Test Authentification GuinéeAvicole</h1>
+
+    <div>
+      <h2>Test d'inscription</h2>
+      <button onclick="testRegister()">Tester l'inscription</button>
+      <div id="register-result"></div>
+    </div>
+
+    <div>
+      <h2>Test de connexion</h2>
+      <button onclick="testLogin()">Tester la connexion</button>
+      <div id="login-result"></div>
+    </div>
+
+    <script>
+      async function testRegister() {
+        const resultDiv = document.getElementById("register-result");
+        resultDiv.innerHTML = "Test en cours...";
+
+        try {
+          const response = await axios.post(
+            "http://localhost:5000/api/auth/register",
+            {
+              firstName: "Test",
+              lastName: "User",
+              email: "test@example.com",
+              phone: "224123456789",
+              password: "Test123!",
+              city: "Conakry",
+              district: "Kaloum",
+              role: "client",
+            }
+          );
+
+          resultDiv.innerHTML =
+            '<p style="color: green;">Inscription réussie!</p><pre>' +
+            JSON.stringify(response.data, null, 2) +
+            "</pre>";
+        } catch (error) {
+          resultDiv.innerHTML =
+            '<p style="color: red;">Erreur d\'inscription:</p><pre>' +
+            JSON.stringify(error.response?.data || error.message, null, 2) +
+            "</pre>";
+        }
+      }
+
+      async function testLogin() {
+        const resultDiv = document.getElementById("login-result");
+        resultDiv.innerHTML = "Test en cours...";
+
+        try {
+          const response = await axios.post(
+            "http://localhost:5000/api/auth/login",
+            {
+              email: "test@example.com",
+              password: "Test123!",
+            }
+          );
+
+          resultDiv.innerHTML =
+            '<p style="color: green;">Connexion réussie!</p><pre>' +
+            JSON.stringify(response.data, null, 2) +
+            "</pre>";
+        } catch (error) {
+          resultDiv.innerHTML =
+            '<p style="color: red;">Erreur de connexion:</p><pre>' +
+            JSON.stringify(error.response?.data || error.message, null, 2) +
+            "</pre>";
+        }
+      }
+    </script>
+  </body>
+</html>
+
