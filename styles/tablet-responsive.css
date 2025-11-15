@@ -1,0 +1,412 @@
+/* Optimisations pour tablettes - GuinéeAvicole Admin */
+
+/* Breakpoints pour tablettes */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* Layout général */
+  .admin-layout {
+    font-size: 14px;
+  }
+  
+  /* Sidebar adaptée pour tablettes */
+  .admin-sidebar {
+    width: 240px;
+    transition: transform 0.3s ease;
+  }
+  
+  .admin-sidebar.collapsed {
+    transform: translateX(-100%);
+  }
+  
+  /* Header responsive */
+  .admin-header {
+    padding: 12px 16px;
+  }
+  
+  .admin-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  /* Grilles adaptatives */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Tableaux responsive */
+  .responsive-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .responsive-table table {
+    min-width: 600px;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  /* Formulaires optimisés */
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Boutons tactiles */
+  .btn-tablet {
+    min-height: 44px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .btn-icon {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  /* Modales adaptées */
+  .modal-tablet {
+    margin: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+  }
+  
+  .modal-content {
+    padding: 20px;
+  }
+  
+  /* Navigation par onglets */
+  .tab-navigation {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .tab-item {
+    min-width: 120px;
+    padding: 12px 16px;
+  }
+  
+  /* Cartes de contenu */
+  .content-card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .card-header {
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+  }
+  
+  /* Graphiques responsive */
+  .chart-container {
+    height: 300px;
+    margin: 16px 0;
+  }
+  
+  /* Listes d'éléments */
+  .item-list {
+    gap: 12px;
+  }
+  
+  .list-item {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  /* Filtres et recherche */
+  .filter-bar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+  
+  .search-input {
+    width: 100%;
+    min-height: 44px;
+  }
+  
+  /* Pagination */
+  .pagination {
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .pagination-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  /* Chat interface */
+  .chat-container {
+    height: 600px;
+  }
+  
+  .chat-sidebar {
+    width: 280px;
+  }
+  
+  .chat-message {
+    max-width: 80%;
+  }
+  
+  /* Notifications */
+  .notification-panel {
+    right: 16px;
+    top: 80px;
+    max-width: 320px;
+  }
+  
+  /* Drag and drop zones */
+  .drop-zone {
+    min-height: 120px;
+    padding: 20px;
+  }
+  
+  /* Accordéons */
+  .accordion-item {
+    margin-bottom: 8px;
+  }
+  
+  .accordion-header {
+    padding: 16px;
+    min-height: 56px;
+  }
+  
+  /* Tooltips adaptés */
+  .tooltip-tablet {
+    font-size: 12px;
+    padding: 8px 12px;
+    max-width: 200px;
+  }
+  
+  /* Menus contextuels */
+  .context-menu {
+    min-width: 180px;
+    padding: 8px 0;
+  }
+  
+  .context-menu-item {
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+  
+  /* Barres de progression */
+  .progress-bar {
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Badges et étiquettes */
+  .badge {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  /* Calendrier */
+  .calendar-grid {
+    gap: 2px;
+  }
+  
+  .calendar-day {
+    min-height: 40px;
+    font-size: 13px;
+  }
+  
+  /* Sélecteurs de date */
+  .date-picker {
+    width: 100%;
+  }
+  
+  /* Zones de texte */
+  .textarea-tablet {
+    min-height: 120px;
+    padding: 12px;
+  }
+  
+  /* Sliders et ranges */
+  .range-slider {
+    height: 6px;
+  }
+  
+  .range-thumb {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Animations optimisées */
+  .fade-in-tablet {
+    animation: fadeInTablet 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeInTablet {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Transitions fluides */
+  .smooth-transition {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Espacement optimisé */
+  .spacing-tablet {
+    margin: 12px 0;
+  }
+  
+  .padding-tablet {
+    padding: 16px;
+  }
+  
+  /* Typographie adaptée */
+  .text-tablet-sm {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .text-tablet-base {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .text-tablet-lg {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Conteneurs flexibles */
+  .flex-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .flex-tablet-col {
+    flex-direction: column;
+  }
+  
+  /* Zones de scroll personnalisées */
+  .scroll-area-tablet {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  
+  .scroll-area-tablet::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scroll-area-tablet::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  .scroll-area-tablet::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+  }
+  
+  .scroll-area-tablet::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+}
+
+/* Optimisations spécifiques pour iPad */
+@media (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  
+  /* Interface tactile optimisée */
+  .touch-optimized {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  /* Zones de toucher étendues */
+  .touch-target {
+    position: relative;
+  }
+  
+  .touch-target::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    z-index: -1;
+  }
+  
+  /* Feedback visuel pour les interactions */
+  .interactive-element:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  /* Optimisations de performance */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+  
+  /* Gestion des orientations */
+  @media (orientation: landscape) {
+    .landscape-layout {
+      flex-direction: row;
+    }
+    
+    .landscape-sidebar {
+      width: 200px;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .portrait-layout {
+      flex-direction: column;
+    }
+    
+    .portrait-sidebar {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* Utilitaires pour le développement */
+.tablet-debug {
+  border: 2px dashed #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.tablet-hidden {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tablet-visible {
+    display: block;
+  }
+  
+  .tablet-hidden {
+    display: none;
+  }
+}
