@@ -20,59 +20,59 @@ const queryClient = new QueryClient({
 
 // Composants
 // Layouts
-import Layout from "./components/Layout";
+import Layout from "./src/components/Layout.jsx";
 
 // Contextes
-import { AuthProvider, useAuth } from "./contexts/AuthContext";
-import { CartProvider } from "./contexts/CartContext";
-import { ToastProvider } from "./contexts/ToastContext";
+import { AuthProvider, useAuth } from "./src/contexts/AuthContext.jsx";
+import { CartProvider } from "./src/contexts/CartContext.jsx";
+import { ToastProvider } from "./src/contexts/ToastContext.jsx";
 
 // Composants communs
-import ErrorBoundary from "./components/common/ErrorBoundary";
+import ErrorBoundary from "./src/components/common/ErrorBoundary.jsx";
 
 // Composants
-import AdminRoute from "./components/AdminRoute";
-import ProtectedRoute from "./components/ProtectedRoute";
+import AdminRoute from "./src/components/AdminRoute.jsx";
+import ProtectedRoute from "./src/components/ProtectedRoute.jsx";
 
 // Pages publiques
-import Cart from "./pages/Cart";
-import Chat from "./pages/Chat";
-import Checkout from "./pages/Checkout";
-import Contact from "./pages/Contact";
-import FAQ from "./pages/FAQ";
-import FarmDetail from "./pages/FarmDetail";
-import Farms from "./pages/Farms";
-import ForgotPassword from "./pages/ForgotPassword";
-import Forums from "./pages/Forums";
-import ForumDetail from "./pages/ForumDetail";
-import Help from "./pages/Help";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import NewForum from "./pages/NewForum";
-import ProductDetail from "./pages/ProductDetail";
-import Products from "./pages/Products";
-import Profile from "./pages/Profile";
-import RegisterEnhanced from "./pages/RegisterEnhanced";
-import ResetPassword from "./pages/ResetPassword";
-import Reviews from "./pages/Reviews";
-import Services from "./pages/Services";
-import Reservation from "./pages/Reservation";
-import MesDemandes from "./pages/MesDemandes";
-import DevisDetail from "./pages/DevisDetail";
-import Terms from "./pages/Terms";
+import Cart from "./src/pages/Cart.jsx";
+import Chat from "./src/pages/Chat.jsx";
+import Checkout from "./src/pages/Checkout.jsx";
+import Contact from "./src/pages/Contact.jsx";
+import FAQ from "./src/pages/FAQ.jsx";
+import FarmDetail from "./src/pages/FarmDetail.jsx";
+import Farms from "./src/pages/Farms.jsx";
+import ForgotPassword from "./src/pages/ForgotPassword.jsx";
+import Forums from "./src/pages/Forums.jsx";
+import ForumDetail from "./src/pages/ForumDetail.jsx";
+import Help from "./src/pages/Help.jsx";
+import Home from "./src/pages/Home.jsx";
+import Login from "./src/pages/Login.jsx";
+import NewForum from "./src/pages/NewForum.jsx";
+import ProductDetail from "./src/pages/ProductDetail.jsx";
+import Products from "./src/pages/Products.jsx";
+import Profile from "./src/pages/Profile.jsx";
+import RegisterEnhanced from "./src/pages/RegisterEnhanced.jsx";
+import ResetPassword from "./src/pages/ResetPassword.jsx";
+import Reviews from "./src/pages/Reviews.jsx";
+import Services from "./src/pages/Services.jsx";
+import Reservation from "./src/pages/Reservation.jsx";
+import MesDemandes from "./src/pages/MesDemandes.jsx";
+import DevisDetail from "./src/pages/DevisDetail.jsx";
+import Terms from "./src/pages/Terms.jsx";
 
 // Pages du tableau de bord
-import Dashboard from "./pages/Dashboard";
-import FarmManagement from "./pages/FarmManagement";
-import ProductManagement from "./pages/ProductManagement";
-import ClientDashboard from "./pages/client/ClientDashboard";
+import Dashboard from "./src/pages/Dashboard.jsx";
+import FarmManagement from "./src/pages/FarmManagement.jsx";
+import ProductManagement from "./src/pages/ProductManagement.jsx";
+import ClientDashboard from "./src/pages/client/ClientDashboard.jsx";
 
 // Composants du tableau de bord
-import AdminDashboard from "./components/admin/AdminDashboard";
-import OrdersList from "./components/admin/orders/OrdersList";
+import AdminDashboard from "./src/components/admin/AdminDashboard.jsx";
+import OrdersList from "./src/components/admin/orders/OrdersList.jsx";
 
 // Utilitaires
-import AuthTest from "./components/AuthTest";
+import AuthTest from "./src/components/AuthTest.jsx";
 
 // Composant pour vérifier les rôles
 const RoleBasedRoute = ({ element, requiredRoles }) => {

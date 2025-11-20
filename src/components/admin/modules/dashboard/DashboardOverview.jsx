@@ -1,7 +1,7 @@
 import { DollarSign, Eye, Package, ShoppingCart, Users } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { adminService } from "../../../../services/adminService.js";
+import { adminService } from "../../../../../services/api";
 import ErrorMessage from "../../../common/ErrorMessage";
 import LoadingSpinner from "../../../common/LoadingSpinner";
 

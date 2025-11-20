@@ -26,7 +26,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { useCart } from "../contexts/CartContext";
 import { useToast } from "../contexts/ToastContext";
 
-const Layout = ({ children }) => {
+const  Layout = ({ children }) => {
   const auth = useAuth() || {};
   const { user, logout } = auth;
   const { itemCount } = useCart();

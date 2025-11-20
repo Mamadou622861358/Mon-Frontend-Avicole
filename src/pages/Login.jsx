@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { Eye, EyeOff, Mail, Lock, Package } from 'lucide-react';
-import authService from '../services/authService';
+import { useNavigate, Link } from "react-router-dom";
+import { Eye, EyeOff, Mail, Lock, Package } from "lucide-react";
+import authService from '../../services/authService';
 import { useAuth } from '../contexts/AuthContext';
 
 const Login = () => {

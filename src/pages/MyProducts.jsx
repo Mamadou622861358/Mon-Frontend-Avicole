@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { useToast } from "../contexts/ToastContext";
-import { productService } from "../services/api";
+import { productService } from "../../services/api";
 
 const MyProducts = () => {
   const { user } = useAuth();

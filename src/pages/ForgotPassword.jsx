@@ -5,7 +5,7 @@ import { ArrowLeft, Mail } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useToast } from "../contexts/ToastContext";
-import { authService } from "../services/api";
+import { authService } from "../../services/api";
 
 const ForgotPassword = () => {
   const { showSuccess, showError } = useToast();

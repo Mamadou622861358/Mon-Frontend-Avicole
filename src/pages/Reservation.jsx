@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useToast } from '../contexts/ToastContext';
-import { Calendar, Users, Mail, Phone, FileText } from 'lucide-react';
-import { quoteService } from '../services/api';
+import { Calendar, Users, Mail, Phone, FileText } from "lucide-react";
+import { quoteService } from '../../services/api';
 
 function useQuery() {
   const { search } = useLocation();

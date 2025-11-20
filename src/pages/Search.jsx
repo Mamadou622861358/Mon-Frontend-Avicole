@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import { useToast } from "../contexts/ToastContext";
-import { productService } from "../services/api";
+import { productService } from "../../services/api";
 
 const Search = () => {
   const [searchParams, setSearchParams] = useSearchParams();

@@ -3,7 +3,7 @@
  */
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { farmService } from "../services/api";
+import { farmService } from "../../services/api";
 
 const MyFarms = () => {
   const [farms, setFarms] = useState([]);

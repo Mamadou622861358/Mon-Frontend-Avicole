@@ -14,8 +14,8 @@ import {
   MoreVertical,
   X
 } from 'lucide-react';
-import { adminService } from '../../../../services/adminService.js';
-import { collectionService } from '../../../../services/api';
+import { adminService } from '../../../../../services/api';
+import { collectionService } from '../../../../../services/api';
 import { useToast } from '../../../../contexts/ToastContext';
 import LoadingSpinner from '../../../common/LoadingSpinner';
 import ErrorMessage from '../../../common/ErrorMessage';

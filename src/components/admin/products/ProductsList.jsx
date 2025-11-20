@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Edit, Trash2, Plus, Search, Package } from 'lucide-react';
-import api from '../../../services/api';
+import api from '../../../../services/api';
 
 const ProductsList = () => {
   const [searchTerm, setSearchTerm] = useState('');

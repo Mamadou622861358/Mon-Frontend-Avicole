@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 import { useAuth } from "../contexts/AuthContext";
 import { useCart } from "../contexts/CartContext";
 import { useToast } from "../contexts/ToastContext";
-import { productService } from "../services/api";
+import { productService } from "../../services/api";
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");

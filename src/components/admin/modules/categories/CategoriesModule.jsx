@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Plus, Search, Edit2, Trash2, CheckCircle2, XCircle, RefreshCw } from 'lucide-react';
-import adminService from '../../../../services/adminService';
+import { adminService } from '../../../../../services/api';
 import { useToast } from '../../../../contexts/ToastContext';
 
 const CategoriesModule = () => {

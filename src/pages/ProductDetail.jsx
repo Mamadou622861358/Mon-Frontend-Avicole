@@ -5,7 +5,7 @@
 import React, { useState } from "react";
 import { useQuery } from "react-query";
 import { Link, useParams } from "react-router-dom";
-import { productService } from "../services/api";
+import { productService } from "../../services/api";
 
 const ProductDetail = () => {
   const { id } = useParams();

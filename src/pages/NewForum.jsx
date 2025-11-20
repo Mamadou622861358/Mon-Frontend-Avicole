@@ -2,7 +2,7 @@ import { ArrowLeft, MessageSquare, Tag } from "lucide-react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "../contexts/ToastContext";
-import { forumService } from "../services/api";
+import { forumService } from "../../services/api";
 
 const NewForum = () => {
   const navigate = useNavigate();

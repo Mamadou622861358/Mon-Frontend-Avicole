@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MessageSquare, Plus, Search, Eye, MessageCircle, Clock, User, ThumbsUp } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
-import { Link } from 'react-router-dom';
-import { forumService } from '../services/api';
+import { Link } from "react-router-dom";
+import { forumService } from '../../services/api';
 
 const Forums = () => {
   const { user } = useAuth();

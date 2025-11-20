@@ -8,7 +8,7 @@ import {
   DollarSign,
   FileText
 } from 'lucide-react';
-import { adminService } from '../../../../services/adminService';
+import { adminService } from '../../../../../services/api';
 
 const ReportsModule = () => {
   const [loading, setLoading] = useState(false);

@@ -8,8 +8,8 @@ import {
   Phone,
   Video
 } from 'lucide-react';
-import { chatService, authService } from '../../../../services/api';
-import { toArray } from '../../../../utils/apiHelpers';
+import { chatService, authService } from '../../../../../services/api';
+import { toArray } from '../../../../../utils/apiHelpers';
 
 const ChatModule = () => {
   const [conversations, setConversations] = useState([]);

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { useToast } from "../contexts/ToastContext";
-import { farmService, productService } from "../services/api";
+import { farmService, productService } from "../../services/api";
 
 const NewProduct = () => {
   const navigate = useNavigate();

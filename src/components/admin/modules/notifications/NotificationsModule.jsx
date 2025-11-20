@@ -12,7 +12,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { io as socketIOClient } from "socket.io-client";
 import { useToast } from "../../../../contexts/ToastContext";
-import { adminService } from "../../../../services/adminService.js";
+import { adminService } from "../../../../../services/api";
 
 const NotificationsModule = () => {
   const { showSuccess, showError } = useToast?.() || {

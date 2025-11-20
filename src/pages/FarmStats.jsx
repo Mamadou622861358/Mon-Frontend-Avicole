@@ -3,9 +3,9 @@
  */
 import { Calendar, DollarSign, Package, Users } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useToast } from "../contexts/ToastContext";
-import { farmService, productService } from "../services/api";
+import { farmService, productService } from "../../services/api";
 
 const FarmStats = () => {
   const { id } = useParams();

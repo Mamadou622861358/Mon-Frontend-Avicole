@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Plus, Edit, Trash2, RefreshCw, Tag, X } from 'lucide-react';
 import { useQuery, useMutation, useQueryClient } from 'react-query';
-import { collectionService } from '../../../../services/api';
+import { collectionService } from '../../../../../services/api';
 import AdminBreadcrumb from '../../layout/AdminBreadcrumb';
 
 const CollectionsModule = () => {

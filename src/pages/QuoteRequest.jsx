@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useToast } from '../contexts/ToastContext';
-import { quoteService } from '../services/quoteService';
+import { quoteService } from '../../services/api';
 
 const QuoteRequest = () => {
   const { showSuccess, showError } = useToast();

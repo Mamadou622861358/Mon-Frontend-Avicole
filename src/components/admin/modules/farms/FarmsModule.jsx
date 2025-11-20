@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useToast } from "../../../../contexts/ToastContext";
-import { adminService } from "../../../../services/adminService.js";
+import { adminService } from "../../../../../services/api";
 
 // Normalise n'importe quelle forme (admin DTO ou schéma public) vers un objet plat attendu par l'UI
 const normalizeFarm = (f) => {

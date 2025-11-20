@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff, Edit, Trash, Plus } from 'lucide-react';
-import authService from '../services/authService';
+import authService from '../../services/authService';
 import ProductForm from '../components/ProductForm';
 import FarmForm from '../components/FarmForm';
 

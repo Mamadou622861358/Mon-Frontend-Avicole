@@ -9,7 +9,7 @@ import {
   Calendar,
   Download
 } from 'lucide-react';
-import { adminService } from '../../../../services/adminService';
+import { adminService } from '../../../../../services/api';
 
 const AnalyticsModule = () => {
   const [analytics, setAnalytics] = useState({ totalUsers: 0, totalSales: 0, totalOrders: 0, conversionRate: 0, topProducts: [], salesSeries: [], usersByRole: [], usersByRegion: [] });

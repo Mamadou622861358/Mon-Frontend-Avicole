@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Send, MessageCircle, User, Bot, Phone, Video, MoreVertical, Paperclip, Smile, Search, Users } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
-import { chatService, authService } from '../services/api';
-import { toArray } from '../utils/apiHelpers';
+import { chatService, authService } from '../../services/api';
+import { toArray } from '../../utils/apiHelpers';
 
 const ChatAdmin = () => {
   const { user } = useAuth();

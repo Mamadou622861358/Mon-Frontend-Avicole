@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, TrendingUp, Package, Home, Calendar } from 'lucide-react';
-import { adminService } from '../../../services/adminService';
+import { adminService } from '../../../../services/api';
 
 const Reports = () => {
   const [startDate, setStartDate] = useState(() => {

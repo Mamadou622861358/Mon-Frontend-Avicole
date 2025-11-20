@@ -11,7 +11,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useToast } from "../contexts/ToastContext";
-import { publicFarmService } from "../services/api";
+import { publicFarmService } from "../../services/api";
 
 const FarmDetail = () => {
   const { id } = useParams();

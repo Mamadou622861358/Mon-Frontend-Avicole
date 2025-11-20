@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { useToast } from "../contexts/ToastContext";
-import { productService } from "../services/api";
+import { productService } from "../../services/api";
 
 const EditProduct = () => {
   const { id } = useParams();

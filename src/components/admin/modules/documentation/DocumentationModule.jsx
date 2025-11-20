@@ -11,7 +11,7 @@ import {
   Trash
 } from 'lucide-react';
 
-import { adminService } from '../../../../services/adminService';
+import { adminService } from "../../../../../services/api";
 
 const DocumentationModule = () => {
   const [searchTerm, setSearchTerm] = useState('');

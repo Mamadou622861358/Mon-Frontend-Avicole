@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
-import { forumService } from '../services/api';
+import React, { useEffect, useState, useMemo } from "react";
+import { useParams, useLocation } from "react-router-dom";
+import { forumService } from '../../services/api';
 import { MessageCircle, Eye, ThumbsUp, User, Clock, Send } from 'lucide-react';
 
 const safeAuthor = (obj) => {

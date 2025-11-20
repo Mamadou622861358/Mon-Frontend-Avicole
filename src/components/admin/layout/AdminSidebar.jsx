@@ -20,7 +20,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
-import { adminService } from '../../../services/api';
+import { adminService } from '../../../../services/api';
 import { useToast } from '../../../contexts/ToastContext';
 
 const iconMap = {

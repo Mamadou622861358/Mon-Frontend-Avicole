@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { BookOpen, HeadphonesIcon, Briefcase, Clock, Users, DollarSign, Star, Calendar } from 'lucide-react';
-import { serviceService, adminService } from '../services/api';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { BookOpen, HeadphonesIcon, Briefcase, Clock, Users, DollarSign, Star, Calendar } from "lucide-react";
+import { serviceService, adminService } from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
   const [services, setServices] = useState([]);

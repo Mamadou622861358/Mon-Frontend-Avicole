@@ -4,7 +4,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "../contexts/ToastContext";
-import { farmService } from "../services/api";
+import { farmService } from "../../services/api";
 
 const NewFarm = () => {
   const navigate = useNavigate();

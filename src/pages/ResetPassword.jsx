@@ -5,7 +5,7 @@ import { ArrowLeft, Eye, EyeOff, Lock } from "lucide-react";
 import React, { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useToast } from "../contexts/ToastContext";
-import { authService } from "../services/api";
+import { authService } from "../../services/api";
 
 const ResetPassword = () => {
   const { token } = useParams();

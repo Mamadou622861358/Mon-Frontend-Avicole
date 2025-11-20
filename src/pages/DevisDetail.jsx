@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
-import { quoteService } from '../services/api';
+import React, { useEffect, useState } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import { quoteService } from '../../services/api';
 import { MessageSquare, ArrowLeft, Calendar, User, Phone, Mail } from 'lucide-react';
 
 const DevisDetail = () => {
